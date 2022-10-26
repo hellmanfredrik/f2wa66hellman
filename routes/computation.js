@@ -1,12 +1,10 @@
 var express = require('express');
 var router = express.Router();
-let times = 0
-
-/* GET users listing. */
+let x = Math.random();
+let str = 'ffff'
+/* GET home page. */
 router.get('/', function(req, res, next) {
-  times += 1
-  res.send('User accesses are: ' + times);
-
+  res.send("Math.log2 applied to " + x + " is " + Math.log2(x));
 });
 
 module.exports = router;
